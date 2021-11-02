@@ -8,14 +8,17 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ExpandLess
+import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.codelab.basicscodelab2.ui.theme.BasicsCodelab2Theme
-import com.codelab.basicscodelab2.ui.theme.Shapes
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,13 +88,12 @@ fun Greeting(name: String) {
                     text = name, style = MaterialTheme.typography.h4
                 )
             }
-            OutlinedButton(
-                onClick = { expanded.value = !expanded.value },
-                modifier = Modifier.padding(1.dp),
-                shape = Shapes.small
-            ) {
-                Text(
-                    if (expanded.value) "less <" else "more >"
+            IconButton(onClick = { expanded.value = !expanded.value }) {
+                Icon(
+                    imageVector = if (expanded.value) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore,
+                    contentDescription = if (expanded.value) stringResource(
+                        id = R.string.show_less
+                    ) else stringResource(id = R.string.show_more)
                 )
             }
         }
