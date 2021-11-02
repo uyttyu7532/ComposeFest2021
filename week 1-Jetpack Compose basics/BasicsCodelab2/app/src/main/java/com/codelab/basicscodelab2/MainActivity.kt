@@ -71,7 +71,7 @@ fun Greeting(name: String) {
             Column(
                 modifier = Modifier
                     .weight(1.0f)
-                    .padding(bottom = extraPadding)
+                    .padding(bottom = extraPadding.coerceAtLeast(0.dp)) // padding 이 음수값 되지 않게
             ) {
                 Text(text = "Hello!")
                 Text(text = name)
