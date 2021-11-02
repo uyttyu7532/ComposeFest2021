@@ -4,9 +4,12 @@ import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ExpandLess
@@ -70,22 +73,54 @@ fun onBoardingPreview() {
     }
 }
 
+@Preview
 @Composable
-fun Greeting(name: String) {
+fun Greetings(names: List<String> = List(1000) { "$it" }) {
+    LazyColumn {
+        items(items = names) {
+            GreetingCard(name = it)
+        }
+    }
+}
+
+@Composable
+fun GreetingCard(name: String) {
+    Card(
+        modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp),
+        shape = RoundedCornerShape(10.dp)
+    ) {
+        CardContent(name = name)
+    }
+}
+
+@Composable
+fun CardContent(name: String) {
     val expanded = remember { mutableStateOf(false) }
 
-    val extraPadding = if (expanded.value) 48.dp else 0.dp
-
-    Surface(color = MaterialTheme.colors.primary, modifier = Modifier.padding(5.dp)) {
-        Row(modifier = Modifier.padding(24.dp)) {
+    Surface(
+        color = MaterialTheme.colors.primary, modifier = Modifier
+            .padding(5.dp)
+            .animateContentSize(
+                animationSpec = spring(
+                    dampingRatio = Spring.DampingRatioMediumBouncy,
+                    stiffness = Spring.StiffnessLow
+                )
+            ),
+        shape = RoundedCornerShape(10.dp)
+    ) {
+        Row(
+            modifier = Modifier.padding(24.dp)
+        ) {
             Column(
-                modifier = Modifier
-                    .weight(1.0f)
-                    .padding(bottom = extraPadding.coerceAtLeast(0.dp)) // padding 이 음수값 되지 않게
+                modifier = Modifier.weight(1.0f)
             ) {
                 Text(text = "Hello!", style = MaterialTheme.typography.h6)
                 Text(
                     text = name, style = MaterialTheme.typography.h4
+                )
+                if (expanded.value) Text(
+                    text = "The \"Composem ipsum\" text appears and disappears, triggering a change in size of each card.",
+                    style = MaterialTheme.typography.h6
                 )
             }
             IconButton(onClick = { expanded.value = !expanded.value }) {
@@ -96,15 +131,6 @@ fun Greeting(name: String) {
                     ) else stringResource(id = R.string.show_more)
                 )
             }
-        }
-    }
-}
-
-@Composable
-fun Greetings(names: List<String> = List(1000) { "$it" }) {
-    LazyColumn {
-        items(items = names) {
-            Greeting(name = it)
         }
     }
 }
