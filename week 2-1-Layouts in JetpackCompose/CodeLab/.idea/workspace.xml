@@ -10,52 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ba106c1-6ace-41ba-9981-274e75f0b394" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../week 1-Jetpack Compose basics/BasicsCodelab2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/androidTest/java/com/codelab/mycodelab/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/java/com/codelab/mycodelab/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/java/com/codelab/mycodelab/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/java/com/codelab/mycodelab/ui/theme/Shape.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/java/com/codelab/mycodelab/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/java/com/codelab/mycodelab/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/test/java/com/codelab/mycodelab/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyCodeLab/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week 1-Jetpack Compose basics/BasicsCodelab2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 1-Jetpack Compose basics/BasicsCodelab2/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week 1-Jetpack Compose basics/BasicsCodelab2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 1-Jetpack Compose basics/BasicsCodelab2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyCodeLab/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyCodeLab/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyCodeLab/app/src/main/java/com/codelab/mycodelab/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../MyCodeLab/app/src/main/java/com/codelab/mycodelab/MainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
